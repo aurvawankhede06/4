@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 4 Solution</title>
+</head>
+<body>
+  <h1>Module 4 Assignment</h1>
+  <p>Check the console for output.</p>
+  <script>
+    // Array of names
+    var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+
+    // Function to print Hello or Goodbye
+    function printGreetings(names) {
+      for (var i = 0; i < names.length; i++) {
+        var firstLetter = names[i].charAt(0).toLowerCase();
+        if (firstLetter === 'j') {
+          console.log("Goodbye " + names[i]);
+        } else {
+          console.log("Hello " + names[i]);
+        }
+      }
+    }
+
+    // Invoke the function
+    printGreetings(names);
+  </script>
+</body>
+</html>
